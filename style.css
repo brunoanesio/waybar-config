@@ -1,0 +1,214 @@
+@import "mocha.css";
+* {
+  border: none;
+  font-family: Iosevka Mayukai Codepro;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+window#waybar {
+  background-color: @base;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#workspaces,
+#mode,
+#custom-media,
+#custom-fans,
+#clock,
+#idle_inhibitor,
+#language,
+#pulseaudio,
+#backlight,
+#battery,
+#network,
+#custom-power,
+#mpd,
+#custom-logo,
+#custom-dunst,
+#custom-network,
+#custom-kernel,
+#custom-uptime,
+#custom-memory,
+#custom-weather,
+#temperature,
+#window,
+#cpu,
+#memory,
+#disk,
+#tray {
+  background-color: @surface0;
+  padding: 0 12px;
+  margin: 4px 4px 4px 4px;
+  border-radius: 90px;
+  background-clip: padding-box;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  min-width: 20px;
+  color: @text;
+}
+
+#custom-network {
+  color: @red;
+}
+
+#custom-dunst {
+  color: @mauve;
+}
+
+#custom-dunst.enabled {
+  color: @mauve;
+}
+
+#custom-dunst.dnd {
+  background-color: @mauve;
+  color: #000000;
+}
+
+#workspaces button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.active {
+  color: @blue;
+}
+
+#disk {
+  color: @teal;
+}
+
+#workspaces button.urgent {
+  color: @red;
+}
+
+#cpu {
+  color: @teal;
+}
+
+#custom-memory {
+  color: @mauve;
+}
+
+#memory {
+  color: @mauve;
+}
+
+#temperature {
+  color: @mauve;
+}
+
+#temperature.critical {
+  background-color: @red;
+  color: @surface0;
+}
+
+#custom-media {
+  background-color: @mauve;
+  color: @surface0;
+}
+
+#custom-fans {
+  color: @red;
+}
+
+#clock {
+  color: @blue;
+}
+
+#custom-weather {
+  color: @teal;
+}
+
+#mode {
+  color: @red;
+}
+
+#window {
+  color: @green;
+}
+
+#custom-power {
+  color: @red;
+}
+
+#idle_inhibitor {
+  color: @subtext0;
+}
+
+#idle_inhibitor.activated {
+  background-color: @subtext0;
+  color: @surface0;
+}
+
+#language {
+  color: @teal;
+}
+
+#custom-uptime {
+  color: @green;
+}
+
+#pulseaudio {
+  color: @lavender;
+}
+
+#custom-logo {
+  color: @blue;
+  background-color: @surface0;
+}
+
+#pulseaudio.muted {
+  background-color: @red;
+  color: @surface0;
+}
+
+#backlight {
+  color: @blue;
+}
+
+#custom-kernel {
+  color: @blue;
+}
+
+#battery {
+  color: @green;
+}
+
+#battery.charging,
+#battery.plugged {
+  background-color: @green;
+  color: @surface0;
+}
+
+@keyframes blink {
+  to {
+    background-color: @surface0;
+    color: @red;
+  }
+}
+
+#battery.critical:not(.charging) {
+  background-color: @red;
+  color: @surface0;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#network {
+  color: @mauve;
+}
+
+#network.disconnected {
+  background-color: @red;
+  color: @surface0;
+}
