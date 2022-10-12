@@ -1,15 +1,15 @@
 @import "mocha.css";
 * {
-  border: none;
   font-family: Iosevka Mayukai Original;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 window#waybar {
+  /* border-bottom: 2px solid @surface0; */
   transition-property: background;
   transition-duration: 0.5s;
-  background: rgba(30, 30, 46, 0.75);
+  background: rgba(30, 30, 46, 0.85);
 }
 
 window#waybar.hidden {
@@ -32,8 +32,8 @@ window#waybar.hidden {
 #disk,
 #tray {
   padding: 0 4px;
-  margin: 4px 4px 4px 4px;
-  border-radius: 90px;
+  margin: 2px 2px 2px 2px;
+  border-radius: 80px;
   background-clip: padding-box;
   /* background-color: @surface0; */
 }
@@ -57,10 +57,6 @@ window#waybar.hidden {
   color: @blue;
 }
 
-#disk {
-  color: @teal;
-}
-
 #workspaces button.urgent {
   color: @red;
 }
@@ -69,20 +65,12 @@ window#waybar.hidden {
   color: @teal;
 }
 
-#custom-memory {
-  color: @mauve;
-}
-
 #memory {
   color: @mauve;
 }
 
 #clock {
   color: @blue;
-}
-
-#custom-weather {
-  color: @teal;
 }
 
 #mode {
@@ -106,13 +94,11 @@ window#waybar.hidden {
 }
 
 #custom-logo {
-  background-color: @surface0;
   color: @blue;
 }
 
 #pulseaudio.muted {
-  background-color: @red;
-  color: @surface0;
+  color: @subtext0;
 }
 
 @keyframes blink {
@@ -120,13 +106,4 @@ window#waybar.hidden {
     background-color: @surface0;
     color: @red;
   }
-}
-
-#network {
-  color: @mauve;
-}
-
-#network.disconnected {
-  background-color: @red;
-  color: @surface0;
 }
