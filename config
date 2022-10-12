@@ -5,9 +5,9 @@
     // "width": 1280,
     "spacing": 4,
     // Order of the modules
-    "modules-left": ["custom/logo", "wlr/workspaces", "hyprland/window"],
+    "modules-left": ["wlr/workspaces", "custom/sep", "hyprland/window"],
     "modules-center": [],
-    "modules-right": ["pulseaudio", "cpu", "memory", "clock", "tray"],
+    "modules-right": ["pulseaudio", "custom/sep", "cpu", "custom/sep", "memory", "custom/sep", "clock", "custom/sep", "tray"],
     // Modules configuration
     // "wlr/workspaces": {
     //     "disable-scroll": true,
@@ -59,6 +59,10 @@
     },
     "custom/logo": {
 		"format": "",
+		"tooltip": false
+	},
+    "custom/sep": {
+		"format": "|",
 		"tooltip": false
 	},
 }
