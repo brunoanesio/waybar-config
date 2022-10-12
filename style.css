@@ -7,9 +7,9 @@
 }
 
 window#waybar {
-  background-color: @base;
-  transition-property: background-color;
+  transition-property: background;
   transition-duration: 0.5s;
+  background: rgba(30, 30, 46, 0.75);
 }
 
 window#waybar.hidden {
@@ -18,58 +18,35 @@ window#waybar.hidden {
 
 #workspaces,
 #mode,
-#custom-media,
-#custom-fans,
 #clock,
-#idle_inhibitor,
 #language,
 #pulseaudio,
-#backlight,
-#battery,
 #network,
-#custom-power,
-#mpd,
 #custom-logo,
-#custom-dunst,
-#custom-network,
-#custom-kernel,
 #custom-uptime,
 #custom-memory,
-#custom-weather,
 #temperature,
 #window,
 #cpu,
 #memory,
 #disk,
 #tray {
-  background-color: @surface0;
-  padding: 0 12px;
+  padding: 0 4px;
   margin: 4px 4px 4px 4px;
   border-radius: 90px;
   background-clip: padding-box;
+  /* background-color: @surface0; */
+}
+
+#custom-sep {
+  padding: 0;
+  color: @surface0;
 }
 
 #workspaces button {
   padding: 0 5px;
   min-width: 20px;
   color: @text;
-}
-
-#custom-network {
-  color: @red;
-}
-
-#custom-dunst {
-  color: @mauve;
-}
-
-#custom-dunst.enabled {
-  color: @mauve;
-}
-
-#custom-dunst.dnd {
-  background-color: @mauve;
-  color: #000000;
 }
 
 #workspaces button:hover {
@@ -100,24 +77,6 @@ window#waybar.hidden {
   color: @mauve;
 }
 
-#temperature {
-  color: @mauve;
-}
-
-#temperature.critical {
-  background-color: @red;
-  color: @surface0;
-}
-
-#custom-media {
-  background-color: @mauve;
-  color: @surface0;
-}
-
-#custom-fans {
-  color: @red;
-}
-
 #clock {
   color: @blue;
 }
@@ -131,20 +90,7 @@ window#waybar.hidden {
 }
 
 #window {
-  color: @green;
-}
-
-#custom-power {
-  color: @red;
-}
-
-#idle_inhibitor {
-  color: @subtext0;
-}
-
-#idle_inhibitor.activated {
-  background-color: @subtext0;
-  color: @surface0;
+  color: @text;
 }
 
 #language {
@@ -160,30 +106,12 @@ window#waybar.hidden {
 }
 
 #custom-logo {
-  color: @blue;
   background-color: @surface0;
+  color: @blue;
 }
 
 #pulseaudio.muted {
   background-color: @red;
-  color: @surface0;
-}
-
-#backlight {
-  color: @blue;
-}
-
-#custom-kernel {
-  color: @blue;
-}
-
-#battery {
-  color: @green;
-}
-
-#battery.charging,
-#battery.plugged {
-  background-color: @green;
   color: @surface0;
 }
 
@@ -192,16 +120,6 @@ window#waybar.hidden {
     background-color: @surface0;
     color: @red;
   }
-}
-
-#battery.critical:not(.charging) {
-  background-color: @red;
-  color: @surface0;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 #network {
