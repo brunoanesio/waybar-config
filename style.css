@@ -9,8 +9,15 @@ window#waybar {
   /* border-bottom: 2px solid @surface0; */
   transition-property: background;
   transition-duration: 0.5s;
-  background: rgba(30, 30, 46, 0.8);
+  background-color: rgba(30, 30, 46, 0.85);
 }
+
+/* window#waybar > box { */
+/*   border-radius: 4px; */
+/*   margin: 4px 8px 8px 8px; */
+/*   box-shadow: 4px 4px 2px 1px #11111b; */
+/*   background-color: rgba(30, 30, 46, 0.85); */
+/* } */
 
 #workspaces,
 #mode,
@@ -28,7 +35,7 @@ window#waybar {
 #disk {
   padding: 0px 2px;
   margin: 2px 2px 2px 2px;
-  border-radius: 80px;
+  border-radius: 40px;
   background-clip: padding-box;
   /* background-color: @surface0; */
 }
