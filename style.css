@@ -1,15 +1,21 @@
 @import "mocha.css";
 * {
-  font-family: Iosevka Mayukai Original;
+  font-family: Euclid Circular A;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 window#waybar {
   /* border-bottom: 2px solid @surface0; */
-  transition-property: background;
+  /* border-radius: 8px; */
+  border-top: 8px transparent;
+  transition-property: background-color;
   transition-duration: 0.5s;
-  background-color: rgba(30, 30, 46, 0.85);
+  background-color: rgba(30, 30, 46, 0.65);
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
 }
 
 /* window#waybar > box { */
@@ -42,12 +48,12 @@ window#waybar {
 
 #tray {
   padding: 2px;
-  margin: 0px 4px 4px 0px;
+  margin: 0px 0px 0px 4px;
 }
 
 #custom-sep {
   padding: 0px;
-  color: @surface0;
+  color: @surface2;
 }
 
 #workspaces button {
@@ -85,7 +91,7 @@ window#waybar {
 }
 
 #window {
-  color: @text;
+  color: @green;
 }
 
 #language {

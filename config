@@ -6,8 +6,8 @@
     "spacing": 4,
     // Order of the modules
     "modules-left": ["wlr/workspaces", "custom/sep", "hyprland/window"],
-    "modules-center": [],
-    "modules-right": ["pulseaudio", "custom/sep", "cpu", "custom/sep", "memory", "custom/sep", "clock", "custom/sep", "tray"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "custom/sep", "memory", "custom/sep", "pulseaudio", "custom/sep", "tray"],
     // Modules configuration
     // "wlr/workspaces": {
     //     "disable-scroll": true,
@@ -29,26 +29,26 @@
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": " {:%a %d %b, %H:%M}",
+        "format": "{:%a %d %b | %H:%M}",
         /* "format": "<span color=\"#89b4fa\"></span> {:%a %d %b, %H:%M}", */
     },
     "cpu": {
-        "format": " {usage}%",
+        "format": "  {usage}%",
         "tooltip": true,
         "interval": 1,
     },
     "memory": {
-        "format": " {used:0.2f}G",
+        "format": "  {used:0.2f}G",
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " muted",
-        "format-source": " {volume}%",
-        "format-source-muted": "",
+        "format-muted": "  muted",
+        "format-source": "  {volume}%",
+        "format-source-muted": "  ",
         "format-icons": {
-            "headphone": "",
+            "headphone": " ",
             "hands-free": "",
             "headset": "",
             "phone": "",
