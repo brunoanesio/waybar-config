@@ -7,3 +7,5 @@ Currently configured for Hyprland.
 ## Screenshot
 
 ![waybar](./screenshot/waybar.png)
+
+_Blur available with Hyprland_
