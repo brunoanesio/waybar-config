@@ -1,52 +1,44 @@
 {
     "layer": "top",
-    // "position": "bottom",
+    "position": "top",
     "height": 32,
-    // "width": 1280,
     "spacing": 4,
-    // Order of the modules
-    "modules-left": ["wlr/workspaces", "custom/sep", "hyprland/window"],
-    "modules-center": ["clock"],
-    "modules-right": ["cpu", "custom/sep", "memory", "custom/sep", "pulseaudio", "custom/sep", "tray"],
-    // Modules configuration
-    // "wlr/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+    "exclusive": true,
+    "gtk-layer-shell": true,
+    "passthrough": false,
+    "fixed-center": true,
+    "modules-left": ["wlr/workspaces", "hyprland/window"],
+    "modules-center": [],
+    "modules-right": ["cpu", "memory", "pulseaudio", "clock#date" , "clock", "tray"],
+    "wlr/workspaces": {
+        "on-click": "activate",
+        "format": "{name}",
+        "all-outputs": true,
+        "disable-scroll": false,
+        "active-only": false
+    },
     "tray": {
         "spacing": 10
     },
     "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%a %d %b | %H:%M}",
-        /* "format": "<span color=\"#89b4fa\"></span> {:%a %d %b, %H:%M}", */
+        "tooltip": false,
+        "format": "  {:%H:%M}"
+    },
+    "clock#date": {
+        "format": "   {:%a %d %b}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "cpu": {
         "format": "  {usage}%",
         "tooltip": true,
-        "interval": 1,
+        "interval": 1
     },
     "memory": {
-        "format": "  {used:0.2f}G",
+        "format": "  {used:0.2f}G"
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": "  muted",
-        "format-source": "  {volume}%",
-        "format-source-muted": "  ",
         "format-icons": {
             "headphone": " ",
             "hands-free": "",
@@ -54,7 +46,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": [" ", " ", " "]
         },
         "on-click": "pavucontrol"
     },
@@ -65,5 +57,5 @@
     "custom/sep": {
 		"format": "|",
 		"tooltip": false
-	},
+	}
 }
