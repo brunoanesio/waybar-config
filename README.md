@@ -8,4 +8,6 @@ Currently configured for Hyprland.
 
 ![waybar](./screenshot/waybar.png)
 
-_Blur available with Hyprland_
+## Credits
+
+Inspired by [rxyhn dotfiles](https://github.com/rxyhn/dotfiles/)
