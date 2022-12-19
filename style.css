@@ -52,6 +52,7 @@ window#waybar.hidden {
 #clock,
 #pulseaudio,
 #custom-logo,
+#custom-power,
 #cpu,
 #tray,
 #window,
@@ -94,6 +95,12 @@ window#waybar.hidden {
 
 #custom-logo {
   color: #89b4fa;
+}
+
+#custom-power {
+  color: #f38ba8;
+  margin-right: 6px;
+  padding-right: 9px;
 }
 
 #pulseaudio.muted {

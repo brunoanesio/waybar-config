@@ -9,7 +9,7 @@
     "fixed-center": true,
     "modules-left": ["wlr/workspaces", "hyprland/window"],
     "modules-center": [],
-    "modules-right": ["cpu", "memory", "pulseaudio", "clock#date" , "clock", "tray"],
+    "modules-right": ["cpu", "memory", "pulseaudio", "clock#date" , "clock", "tray", "custom/power"],
     "wlr/workspaces": {
         "on-click": "activate",
         "format": "{name}",
@@ -57,5 +57,10 @@
     "custom/sep": {
 		"format": "|",
 		"tooltip": false
-	}
+	},
+    "custom/power": {
+        "tooltip": false,
+        "on-click": "power-menu",
+        "format": " ",
+    },
 }
