@@ -101,6 +101,7 @@ window#waybar.hidden {
   color: #f38ba8;
   margin-right: 6px;
   padding-right: 9px;
+  font-size: 14px;
 }
 
 #pulseaudio.muted {
