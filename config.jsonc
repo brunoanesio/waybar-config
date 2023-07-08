@@ -68,8 +68,7 @@
   },
   "custom/power": {
     "tooltip": false,
-    "on-click": "",
-    "onclick": "wlogout -p layer-shell &",
+    "on-click": "wlogout -p layer-shell &",
     "format": " "
   }
 }
