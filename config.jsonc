@@ -8,7 +8,7 @@
   "passthrough": false,
   "fixed-center": true,
   "modules-left": ["wlr/workspaces", "hyprland/window"],
-  "modules-center": [],
+  "modules-center": ["custom/spotify"],
   "modules-right": [
     "cpu",
     "memory",
@@ -18,6 +18,13 @@
     "tray",
     "custom/power"
   ],
+  "custom/spotify": {
+    "format": "{}",
+    "return-type": "json",
+    "on-click": "playerctl -p spotify play-pause",
+    "on-click-right": "spotifatius toggle-liked",
+    "exec": "spotifatius monitor"
+  },
   "wlr/workspaces": {
     "on-click": "activate",
     "format": "{name}",

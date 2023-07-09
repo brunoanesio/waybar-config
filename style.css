@@ -53,6 +53,7 @@ window#waybar.hidden {
 #pulseaudio,
 #custom-logo,
 #custom-power,
+#custom-spotify,
 #cpu,
 #tray,
 #window,
@@ -67,6 +68,19 @@ window#waybar.hidden {
 #custom-sep {
   padding: 0px;
   color: #585b70;
+}
+
+#custom-spotify.playing {
+  color: #a6e3a1;
+}
+
+#custom-spotify.liked,
+#custom-spotify.added {
+  color: #cba6f7;
+}
+
+#custom-spotify.removed {
+  color: #f38ba8;
 }
 
 #window.empty {
