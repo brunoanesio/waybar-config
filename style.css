@@ -69,6 +69,10 @@ window#waybar.hidden {
   color: #585b70;
 }
 
+#window.empty {
+  background-color: transparent;
+}
+
 #cpu {
   color: #94e2d5;
 }
