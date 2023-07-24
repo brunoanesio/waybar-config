@@ -33,7 +33,6 @@
     "active-only": false
   },
   "tray": {
-    "icon-size": 20,
     "show-passive-items": true,
     "spacing": 10
   },
