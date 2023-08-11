@@ -87,7 +87,7 @@ window#waybar.hidden {
   color: #cdd6f4;
 }
 
-#window.empty {
+window#waybar.empty #window {
   background-color: transparent;
 }
 
