@@ -23,6 +23,8 @@
     "return-type": "json",
     "on-click": "playerctl -p spotify play-pause",
     "on-click-right": "spotifatius toggle-liked",
+    "on-click-middle": "playerctl -p spotify next",
+    "tooltip-format": "{tooltip}",
     "exec": "spotifatius monitor"
   },
   "wlr/workspaces": {
