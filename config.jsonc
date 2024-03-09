@@ -7,7 +7,7 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["wlr/workspaces", "hyprland/window"],
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-center": ["custom/spotify"],
   "modules-right": [
     "cpu",
@@ -16,7 +16,7 @@
     "clock#date",
     "clock",
     "tray",
-    "custom/power"
+    "custom/power",
   ],
   "custom/spotify": {
     "format": "{}",
@@ -25,60 +25,60 @@
     "on-click-right": "spotifatius toggle-liked",
     "on-click-middle": "playerctl -p spotify next",
     "tooltip-format": "{tooltip}",
-    "exec": "spotifatius monitor"
+    "exec": "spotifatius monitor",
   },
   "wlr/workspaces": {
     "on-click": "activate",
     "format": "{name}",
     "all-outputs": true,
     "disable-scroll": false,
-    "active-only": false
+    "active-only": false,
   },
   "tray": {
     "show-passive-items": true,
-    "spacing": 10
+    "spacing": 10,
   },
   "clock": {
     "tooltip": false,
-    "format": "  {:%H:%M}"
+    "format": "  {:%H:%M}",
   },
   "clock#date": {
     "format": "   {:%a %d %b}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
   },
   "cpu": {
-    "format": "  {usage}%",
+    "format": "󰍛  {usage}%",
     "tooltip": true,
-    "interval": 1
+    "interval": 1,
   },
   "memory": {
-    "format": "  {used:0.2f}G"
+    "format": "  {used:0.2f}G",
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-muted": "  muted",
     "format-icons": {
       "headphone": " ",
-      "hands-free": "",
-      "headset": "",
+      "hands-free": "󰂑",
+      "headset": "󰂑",
       "phone": "",
       "portable": "",
       "car": "",
-      "default": [" ", " ", " "]
+      "default": [" ", " ", " "],
     },
-    "on-click": "pavucontrol"
+    "on-click": "pavucontrol",
   },
   "custom/logo": {
     "format": "",
-    "tooltip": false
+    "tooltip": false,
   },
   "custom/sep": {
     "format": "|",
-    "tooltip": false
+    "tooltip": false,
   },
   "custom/power": {
     "tooltip": false,
     "on-click": "wlogout -p layer-shell &",
-    "format": " "
-  }
+    "format": " ",
+  },
 }
