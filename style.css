@@ -1,6 +1,6 @@
 * {
   min-height: 0;
-  font-family: Lexend;
+  font-family: Lexend, "Font Awesome 6 Free Solid";
   font-size: 16px;
   font-weight: 500;
 }
@@ -125,7 +125,7 @@ window#waybar.empty #window {
 
 #custom-power {
   color: #f38ba8;
-  padding-right: 8px;
+  padding-right: 6px;
   font-size: 14px;
 }
 
