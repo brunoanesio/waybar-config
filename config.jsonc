@@ -13,8 +13,8 @@
     "cpu",
     "memory",
     "pulseaudio",
-    "clock#date",
     "clock",
+    "clock#simpleclock",
     "tray",
     "custom/power",
   ],
@@ -24,7 +24,6 @@
     "on-click": "playerctl -p spotify play-pause",
     "on-click-right": "spotifatius toggle-liked",
     "on-click-middle": "playerctl -p spotify next",
-    "tooltip-format": "{tooltip}",
     "exec": "spotifatius monitor",
   },
   "wlr/workspaces": {
@@ -38,12 +37,12 @@
     "show-passive-items": true,
     "spacing": 10,
   },
-  "clock": {
+  "clock#simpleclock": {
     "tooltip": false,
     "format": "  {:%H:%M}",
   },
-  "clock#date": {
-    "format": "   {:%a %d %b}",
+  "clock": {
+    "format": "  {:L%a %d %b}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
   },
   "cpu": {
@@ -79,6 +78,6 @@
   "custom/power": {
     "tooltip": false,
     "on-click": "wlogout -p layer-shell &",
-    "format": " ",
+    "format": "⏻ ",
   },
 }

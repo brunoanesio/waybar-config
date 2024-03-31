@@ -71,10 +71,12 @@ window#waybar.hidden {
 }
 
 #custom-spotify.playing {
-  color: #a6e3a1;
+  color: #9399b2;
 }
 
-#custom-spotify.liked,
+#custom-spotify.liked {
+  color: #f9e2af;
+}
 #custom-spotify.added {
   color: #cba6f7;
 }
@@ -100,11 +102,11 @@ window#waybar.empty #window {
 }
 
 #clock {
-  color: #89b4fa;
+  color: #74c7ec;
 }
 
-#clock.date {
-  color: #74c7ec;
+#clock.simpleclock {
+  color: #89b4fa;
 }
 
 #window {
@@ -125,7 +127,7 @@ window#waybar.empty #window {
 
 #custom-power {
   color: #f38ba8;
-  padding-right: 6px;
+  padding-right: 5px;
   font-size: 14px;
 }
 
