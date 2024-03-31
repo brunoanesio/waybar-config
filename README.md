@@ -4,9 +4,9 @@ Configuration for [Waybar](https://github.com/Alexays/Waybar)
 
 Currently configured for Hyprland.
 
-## Spotify Module
+## Spotify Module (Optional)
 
-Need environment variables to set up. See [Spotifatius](https://github.com/AndreasBackx/spotifatius), for more details.
+Need environment variables to function properly. See [Spotifatius](https://github.com/AndreasBackx/spotifatius) for more details.
 
 ## Screenshot
 
