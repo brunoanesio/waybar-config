@@ -71,7 +71,7 @@ window#waybar.hidden {
 }
 
 #custom-spotify.playing {
-  color: #9399b2;
+  color: #cdd6f4;
 }
 
 #custom-spotify.liked {
@@ -86,7 +86,7 @@ window#waybar.hidden {
 }
 
 #custom-spotify.paused {
-  color: #cdd6f4;
+  color: #9399b2;
 }
 
 window#waybar.empty #window {
