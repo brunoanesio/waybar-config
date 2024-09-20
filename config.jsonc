@@ -1,8 +1,8 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 32,
-  "spacing": 4,
+  "height": 40,
+  "spacing": 0,
   "exclusive": true,
   "gtk-layer-shell": true,
   "passthrough": false,
@@ -19,14 +19,14 @@
     "custom/power",
   ],
   "custom/spotify": {
-    "format": "{}",
+    "format": "  {}",
     "return-type": "json",
     "on-click": "playerctl -p spotify play-pause",
     "on-click-right": "spotifatius toggle-liked",
     "on-click-middle": "playerctl -p spotify next",
     "exec": "spotifatius monitor",
   },
-  "wlr/workspaces": {
+  "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{name}",
     "all-outputs": true,
@@ -66,10 +66,6 @@
       "default": [" ", " ", " "],
     },
     "on-click": "pavucontrol",
-  },
-  "custom/logo": {
-    "format": "",
-    "tooltip": false,
   },
   "custom/sep": {
     "format": "|",

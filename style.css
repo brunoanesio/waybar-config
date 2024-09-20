@@ -2,7 +2,7 @@
   min-height: 0;
   font-family: Lexend, "Font Awesome 6 Free Solid";
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 window#waybar {
@@ -10,7 +10,8 @@ window#waybar {
   transition-duration: 0.5s;
   /* background-color: #1e1e2e; */
   /* background-color: #181825; */
-  background-color: rgba(24, 24, 37, 0.6);
+  background-color: #11111b;
+  /* background-color: rgba(24, 24, 37, 0.6); */
 }
 
 window#waybar.hidden {
@@ -28,8 +29,9 @@ window#waybar.hidden {
   padding: 2px 10px;
   min-height: 0;
   margin: 4px 4px;
-  border-radius: 8px;
-  background-color: #181825;
+  border-radius: 4px;
+  /* background-color: #181825; */
+  background-color: #1e1e2e;
   color: #cdd6f4;
 }
 
@@ -46,6 +48,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.urgent {
+  color: #1e1e2e;
   background-color: #f38ba8;
 }
 
@@ -60,9 +63,10 @@ window#waybar.hidden {
 #window {
   min-height: 0;
   padding: 2px 10px;
-  border-radius: 8px;
+  border-radius: 4px;
   margin: 4px 4px;
-  background-color: #181825;
+  /* background-color: #181825; */
+  background-color: #1e1e2e;
 }
 
 #custom-sep {
@@ -71,14 +75,14 @@ window#waybar.hidden {
 }
 
 #custom-spotify.playing {
-  color: #cdd6f4;
+  color: #a6e3a1;
 }
 
 #custom-spotify.liked {
-  color: #f9e2af;
+  color: #cba6f7;
 }
 #custom-spotify.added {
-  color: #cba6f7;
+  color: #f9e2af;
 }
 
 #custom-spotify.removed {
@@ -139,5 +143,5 @@ window#waybar.empty #window {
 }
 
 tooltip {
-  border-radius: 8px;
+  background-color: #181825;
 }
