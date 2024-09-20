@@ -10,7 +10,7 @@ Need environment variables to function properly. See [Spotifatius](https://githu
 
 ## Screenshot
 
-![waybar](./screenshot/waybar.png)
+![waybar](https://i.imgur.com/ckmBgcz.png)
 
 ## Credits
 
