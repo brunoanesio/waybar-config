@@ -51,7 +51,7 @@
     "interval": 1,
   },
   "memory": {
-    "format": "  {used:0.2f}G",
+    "format": "  {used:0.2f} GB",
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
