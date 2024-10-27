@@ -1,14 +1,14 @@
 {
-  "layer": "top",
+  "layer": "bottom",
   "position": "top",
   "height": 40,
-  "spacing": 0,
+  "spacing": 2,
   "exclusive": true,
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-center": ["custom/spotify"],
+  "modules-center": [],
   "modules-right": [
     "cpu",
     "memory",
@@ -28,10 +28,13 @@
   },
   "hyprland/workspaces": {
     "on-click": "activate",
-    "format": "{name}",
+    "format": "{id}",
     "all-outputs": true,
     "disable-scroll": false,
     "active-only": false,
+  },
+  "hyprland/window": {
+    "format": "{class}",
   },
   "tray": {
     "show-passive-items": true,
@@ -51,7 +54,7 @@
     "interval": 1,
   },
   "memory": {
-    "format": "  {used:0.2f} GB",
+    "format": "  {used:0.1f}Gi",
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
@@ -74,6 +77,6 @@
   "custom/power": {
     "tooltip": false,
     "on-click": "wlogout -p layer-shell &",
-    "format": "⏻ ",
+    "format": "⏻",
   },
 }
