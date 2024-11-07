@@ -4,13 +4,11 @@ Configuration for [Waybar](https://github.com/Alexays/Waybar)
 
 Currently configured for Hyprland.
 
-## Spotify Module (Optional)
-
-Need environment variables to function properly. See [Spotifatius](https://github.com/AndreasBackx/spotifatius) for more details.
+Fonts required: Lexend, Font Awesome 6 Free
 
 ## Screenshot
 
-![waybar](https://i.imgur.com/ejWrhPQ.png)
+![waybar](https://i.imgur.com/qkpUAI4.png)
 
 ## Credits
 

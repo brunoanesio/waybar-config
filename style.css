@@ -51,7 +51,8 @@ window#waybar {
 #cpu,
 #tray,
 #memory,
-#window {
+#window,
+#mpris {
   min-height: 0;
   min-width: 0;
   padding: 0.3em 0.6em;
@@ -59,6 +60,14 @@ window#waybar {
   margin: 5px 4px;
   /* background-color: #181825; */
   background-color: #1e1e2e;
+}
+
+#mpris.playing {
+  color: #a6e3a1;
+}
+
+#mpris.paused {
+  color: #9399b2;
 }
 
 #custom-sep {

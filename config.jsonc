@@ -8,7 +8,7 @@
   "passthrough": false,
   "fixed-center": true,
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-center": [],
+  "modules-center": ["mpris"],
   "modules-right": [
     "cpu",
     "memory",
@@ -25,6 +25,18 @@
     "on-click-right": "spotifatius toggle-liked",
     "on-click-middle": "playerctl -p spotify next",
     "exec": "spotifatius monitor",
+  },
+  "mpris": {
+    "player": "spotify",
+    "dynamic-order": ["artist", "title"],
+    "format": "{player_icon} {dynamic}",
+    "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "status-icons": {
+      "paused": "",
+    },
+    "player-icons": {
+      "default": "",
+    },
   },
   "hyprland/workspaces": {
     "on-click": "activate",
@@ -77,6 +89,6 @@
   "custom/power": {
     "tooltip": false,
     "on-click": "wlogout -p layer-shell &",
-    "format": "⏻",
+    "format": "",
   },
 }
