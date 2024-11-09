@@ -18,9 +18,9 @@ window#waybar {
 #workspaces button {
   min-height: 0;
   min-width: 0;
-  padding: 0.3em 0.6em;
-  margin: 5px 4px;
-  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
   /* background-color: #181825; */
   background-color: #1e1e2e;
   color: #cdd6f4;
@@ -55,9 +55,9 @@ window#waybar {
 #mpris {
   min-height: 0;
   min-width: 0;
-  padding: 0.3em 0.6em;
-  border-radius: 4px;
-  margin: 5px 4px;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  margin: 0.4rem 0.25rem;
   /* background-color: #181825; */
   background-color: #1e1e2e;
 }

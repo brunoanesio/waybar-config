@@ -8,7 +8,7 @@ Fonts required: Lexend, Font Awesome 6 Free
 
 ## Screenshot
 
-![waybar](https://i.imgur.com/qkpUAI4.png)
+![waybar](https://i.imgur.com/puJrg4i.png)
 
 ## Credits
 
