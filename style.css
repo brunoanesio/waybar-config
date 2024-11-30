@@ -16,8 +16,6 @@ window#waybar {
 }
 
 #workspaces button {
-  min-height: 0;
-  min-width: 0;
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
@@ -27,8 +25,6 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  box-shadow: inherit;
-  text-shadow: inherit;
   color: #1e1e2e;
   background-color: #cdd6f4;
 }
@@ -53,8 +49,6 @@ window#waybar {
 #memory,
 #window,
 #mpris {
-  min-height: 0;
-  min-width: 0;
   padding: 0.3rem 0.6rem;
   border-radius: 6px;
   margin: 0.4rem 0.25rem;
@@ -73,25 +67,6 @@ window#waybar {
 #custom-sep {
   padding: 0px;
   color: #585b70;
-}
-
-#custom-spotify.playing {
-  color: #a6e3a1;
-}
-
-#custom-spotify.liked {
-  color: #cba6f7;
-}
-#custom-spotify.added {
-  color: #f9e2af;
-}
-
-#custom-spotify.removed {
-  color: #f38ba8;
-}
-
-#custom-spotify.paused {
-  color: #9399b2;
 }
 
 window#waybar.empty #window {
