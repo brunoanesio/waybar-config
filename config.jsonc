@@ -16,6 +16,7 @@
     "clock",
     "clock#simpleclock",
     "tray",
+    "custom/notification",
     "custom/power",
   ],
   "custom/spotify": {
@@ -46,7 +47,7 @@
     "active-only": false,
   },
   "hyprland/window": {
-    "format": "{class}",
+    "format": "{title}",
   },
   "tray": {
     "show-passive-items": true,
@@ -97,5 +98,18 @@
     "tooltip": false,
     "on-click": "wlogout -p layer-shell &",
     "format": "",
+  },
+  "custom/notification": {
+    "escape": true,
+    "exec": "swaync-client -swb",
+    "exec-if": "which swaync-client",
+    "format": "{icon}",
+    "format-icons": {
+      "none": "󰅺",
+      "notification": "󰡟",
+    },
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "return-type": "json",
+    "tooltip": false,
   },
 }
