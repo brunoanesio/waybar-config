@@ -4,7 +4,7 @@ Configuration for [Waybar](https://github.com/Alexays/Waybar)
 
 Currently configured for Hyprland.
 
-Fonts required: Lexend, Font Awesome 6 Free
+Fonts required: Lexend, JetBrainsMono NFP (or any other Nerd Font Propo variant)
 
 ## Screenshot
 

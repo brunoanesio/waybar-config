@@ -1,7 +1,7 @@
 * {
   min-height: 0;
   min-width: 0;
-  font-family: Lexend, "Font Awesome 6 Free Solid";
+  font-family: Lexend, "JetBrainsMono NFP";
   font-size: 16px;
   font-weight: 600;
 }
@@ -50,8 +50,8 @@ window#waybar {
 #window,
 #mpris {
   padding: 0.3rem 0.6rem;
-  border-radius: 6px;
   margin: 0.4rem 0.25rem;
+  border-radius: 6px;
   /* background-color: #181825; */
   background-color: #1e1e2e;
 }
@@ -90,7 +90,7 @@ window#waybar.empty #window {
 }
 
 #window {
-  color: #a6e3a1;
+  color: #cdd6f4;
 }
 
 #pulseaudio {
@@ -107,7 +107,6 @@ window#waybar.empty #window {
 
 #custom-power {
   color: #f38ba8;
-  font-size: 14px;
 }
 
 tooltip {
